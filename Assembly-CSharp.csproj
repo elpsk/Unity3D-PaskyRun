@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{E3FA5B06-D42B-82A8-6653-6BE1F536BAC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\API\IBezierPoint.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\API\IFactory.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\API\IRecyclable.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Abstract\AbstractTimer.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Abstract\HydraMonoBehaviour.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Abstract\HydraMonoBehaviourChild.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Abstract\HydraPropertyAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Abstract\HydraScriptableObject.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Abstract\SingletonHydraMonoBehaviour.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Abstract\SingletonHydraScriptableObject.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Concrete\BezierPath.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Concrete\HydraEventHelper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\EventArguments\EventArg.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\AnimationCurveExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\ArrayExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\Colliders\BoxColliderExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\Colliders\CapsuleColliderExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\Colliders\CharacterControllerExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\Colliders\ColliderExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\Colliders\MeshColliderExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\GameObjectExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\GradientExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\IDictionaryExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\ListExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\Matrix4x4Extensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\MonoBehaviourExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\QuaternionExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\RectExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\RigidbodyExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\Texture2DExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\TransformExtensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Extensions\Vector2Extensions.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\AbstractVector3Attribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\AnimationFramePair.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\AxisStateAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\BezierPointAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\InputAttributes\AbstractAxesInputAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\InputAttributes\AbstractInputAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\InputAttributes\AxisInputAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\InputAttributes\ButtonInputAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\InputAttributes\MouseButtonInputAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\NoiseAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\RangeAttributes\ColorRangeAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\RangeAttributes\FloatRangeAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\RangeAttributes\IntRangeAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\RangeAttributes\Vector3RangeAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\SceneAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\SoundEffectAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\Texture2DAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\Vector3Attribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\PropertyAttributes\Vector3CurvesAttribute.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\AnimationEventReceiver.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\ArrayUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Audio\AudioSourceFactory.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Audio\AudioSourcePool.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Audio\AudioSourceUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Audio\AudioSourceWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\BoundsUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\CameraUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\ColorUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Comparers\ClockwiseComparer.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\DebugUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\GLUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\GameObjectUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\HideAndDontSave\AbstractHideAndDontSaveWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\HideAndDontSave\DontCullWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\HideAndDontSave\MeshRendererWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\HideAndDontSave\RigidBodyWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\HydraMathUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\LayerMaskUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Matrix4x4Utils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\MeshUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\ObjectPool.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\ObjectUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\Collider2DWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\Collider3DWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\Hit2DWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\Hit3DWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\IColliderWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\IHitWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\IPhysicsMaterialWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\PhysicsMaterial2DWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\PhysicsMaterial3DWrapper.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Physics\PhysicsUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\PrefabBuilder.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\RNG\HydraRNG.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\RNG\SimpleRNG.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\RNG\SimplexNoise.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\RectUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\ReflectionUtils.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\RepaintScheduler.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\ResourceCache.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Shapes\2d\Line2d.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Shapes\2d\Triangle2d.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Shapes\3d\Capsule.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Shapes\3d\Line3d.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\Shapes\3d\Triangle3d.cs" />
+     <Compile Include="Assets\Hydra\HydraCommon\Scripts\Utils\StringUtils.cs" />
+     <Compile Include="Assets\Scripts\Actions.cs" />
+     <Compile Include="Assets\Scripts\Ball.cs" />
+     <Compile Include="Assets\Scripts\Camera2DFollow.cs" />
+     <Compile Include="Assets\Scripts\Commons.cs" />
+     <Compile Include="Assets\Scripts\Drawer.cs" />
+     <Compile Include="Assets\Scripts\LevelConfig.cs" />
+     <Compile Include="Assets\Scripts\LevelReader.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\ReplaceSelection.cs" />
+     <Compile Include="Assets\Scripts\Rotator.cs" />
+     <Compile Include="Assets\Scripts\ScrollRectSnap.cs" />
+     <Compile Include="Assets\Scripts\Scroller.cs" />
+     <Compile Include="Assets\Scripts\Settings.cs" />
+     <Compile Include="Assets\Scripts\Storage.cs" />
+     <None Include="Assets\Hydra\HydraCommon\LICENSE_LGPLv3.txt" />
+     <None Include="Assets\Hydra\HydraCommon\LICENSE_GPLv3.txt" />
+     <None Include="Assets\Hydra\HydraCommon\COPYRIGHT.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
