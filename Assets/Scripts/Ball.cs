@@ -10,6 +10,10 @@ public class Ball : MonoBehaviour
 	public GameObject panel;
 	public GameObject quad;
 
+	public Image star1;
+	public Image star2;
+	public Image star3;
+
 	public Text panelText;
 	public Button panelButton;
 	public Text panelButtonText;
@@ -62,6 +66,10 @@ public class Ball : MonoBehaviour
 
 	void showPanel ()
 	{
+		star1.enabled = opts.score > 5;
+		star2.enabled = opts.score > 10;
+		star3.enabled = opts.score > 15;
+
 		panel.transform.localScale = new Vector3 (1, 1, 1);
 		quad.GetComponent<Scroller> ().enabled = false;
 	}
@@ -77,9 +85,14 @@ public class Ball : MonoBehaviour
 
 	void levelFail ()
 	{
+		star1.enabled = false;
+		star2.enabled = false;
+		star3.enabled = false;
+
 		panelText.text = Commons.kStringGameOver;
 		panelButtonText.text = Commons.kStringGoToMenuText;
 
+		panelButton.onClick.RemoveAllListeners ();
 		panelButton.onClick.AddListener (() => {
 			SceneManager.LoadScene (Commons.kSceneMenu);
 		});
@@ -92,13 +105,17 @@ public class Ball : MonoBehaviour
 		Storage store = new Storage ();
 		int level = store.LoadData ();
 
-		if (level > 2)
+		if (level > 3)
 			return;
 		
 		if (level == 1) {
 			store.SaveData (2);
-		} else if (level == 2) {
+		}
+		if (level == 2) {
 			store.SaveData (3);
+		}
+		if (level == 3) {
+			store.SaveData (4);
 		}
 	}
 

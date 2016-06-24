@@ -12,8 +12,6 @@ public class ScrollRectSnap : MonoBehaviour
 	private float[] distance;
 	private float[] distReposition;
 
-	private bool dragging = false;
-
 	private int btnDistance;
 	private int minBtnNum;
 	private int btnLen;
@@ -78,16 +76,6 @@ public class ScrollRectSnap : MonoBehaviour
 		float newX = Mathf.Lerp (panel.anchoredPosition.x, position, Time.deltaTime * 5f);
 		Vector2 newPosition = new Vector2 (newX, panel.anchoredPosition.y);
 		panel.anchoredPosition = newPosition;
-	}
-
-	public void startDragging ()
-	{
-		dragging = true;
-	}
-
-	public void endDragging ()
-	{
-		dragging = false;
 	}
 }
 

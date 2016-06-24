@@ -65,7 +65,7 @@ public class LevelConfig : MonoBehaviour
 			opts = store.LoadLevelOptions ();
 		}
 
-		level.text = "Level : 1";
+		//level.text = "Level : 1";
 		score.text = "Score : " + opts.score;
 		time.text = "Time : " + ConvertToTime (Time.timeSinceLevelLoad);
 	}

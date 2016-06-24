@@ -4,9 +4,6 @@ using System.IO;
 
 public class LevelReader
 {
-	FileInfo theSourceFile = null;
-	StreamReader reader = null;
-	string text = null;
 	ArrayList list = null;
 
 	public LevelReader (int num)

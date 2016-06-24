@@ -4,7 +4,7 @@
   <image source="platform.png" width="914" height="936"/>
  </tileset>
  <tileset firstgid="157" name="star" tilewidth="70" tileheight="70" tilecount="1" columns="1">
-  <image source="../Images/star.png" width="70" height="70"/>
+  <image source="star.png" width="70" height="70"/>
  </tileset>
  <layer name="Livello tile 1" width="100" height="11">
   <data encoding="csv">
