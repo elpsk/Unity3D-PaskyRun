@@ -9,7 +9,7 @@ A very ugly clone of [GravityGuy](https://itunes.apple.com/it/app/gravity-guy/id
 ![](http://beanalby.net/blog/wp-content/uploads/2013/03/unityIcon.png)
 ![](http://static.miniclipcdn.com/content/images/smartphone/icons/homepage_small/gravity-guy.png)
 
-###Features
+###Features (learned):
 - Infinite vertical scrolling menu  
 - Multilevel  
 - Levels locked until completion  
@@ -19,6 +19,8 @@ A very ugly clone of [GravityGuy](https://itunes.apple.com/it/app/gravity-guy/id
 - Animated sprite
 - Scrollable backgrounds
 - Save/Load data from disk
+- Autolayout
+- Custom fonts
 
 ###How it works?
 It's very simple game. Is an auto-scrolling game that pressing "Space" (on desktop) or "Touch" (mobile) on screen, the player change its gravity.  
