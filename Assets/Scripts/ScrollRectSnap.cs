@@ -42,7 +42,7 @@ public class ScrollRectSnap : MonoBehaviour
 			distance [i] = Mathf.Abs (distReposition [i]);
 
 
-			if (distReposition [i] > 700) {
+			if (distReposition [i] > 900) {
 				float curX = btns [i].GetComponent<RectTransform> ().anchoredPosition.x;
 				float curY = btns [i].GetComponent<RectTransform> ().anchoredPosition.y;
 

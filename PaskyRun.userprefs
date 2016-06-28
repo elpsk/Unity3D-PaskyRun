@@ -1,30 +1,30 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelConfig.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScrollRectSnap.cs">
     <Files>
-      <File FileName="Assets/Scripts/Drawer.cs" Line="41" Column="5" />
-      <File FileName="Assets/Scripts/Scroller.cs" Line="26" Column="4" />
-      <File FileName="Assets/Editor Utilities/Editor/MissingScriptResolver.cs" Line="83" Column="51" />
-      <File FileName="Assets/Scripts/Ball.cs" Line="82" Column="1" />
-      <File FileName="Assets/Scripts/Commons.cs" Line="27" Column="1" />
-      <File FileName="Assets/Scripts/Actions.cs" Line="36" Column="1" />
+      <File FileName="Assets/Scripts/Rotator.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/LevelReader.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/Drawer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Scroller.cs" Line="1" Column="1" />
+      <File FileName="Assets/Editor Utilities/Editor/MissingScriptResolver.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Commons.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Actions.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Camera2DFollow.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/LevelConfig.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/LevelReader.cs" Line="30" Column="1" />
-      <File FileName="Assets/Scripts/MainMenu.cs" Line="17" Column="3" />
-      <File FileName="Assets/Scripts/ReplaceSelection.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rotator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ScrollRectSnap.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ScrollRectSnap.cs" Line="22" Column="2" />
       <File FileName="Assets/Scripts/Settings.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Storage.cs" Line="35" Column="2" />
+      <File FileName="Assets/Scripts/Storage.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PaskyRun" expanded="True">
             <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Hydra" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="LevelConfig.cs" selected="True" />
+                <Node name="ScrollRectSnap.cs" selected="True" />
               </Node>
             </Node>
             <Node name="Assembly-CSharp-Editor" expanded="True" />
